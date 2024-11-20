@@ -1,8 +1,7 @@
 {
   "minecraft_log": {
-    "presets": "lunar",
-    "encoding": "ansi",
-    "custom_location": "D:/Minecraft/.minecraft/versions/logs"
+    "location": "lunar",
+    "encoding": "ansi"
   },
   "log": {
     "party_chat": false
