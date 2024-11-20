@@ -1,0 +1,45 @@
+{
+  "minecraft_log": {
+    "presets": "lunar",
+    "encoding": "ansi",
+    "custom_location": "D:/Minecraft/.minecraft/versions/logs"
+  },
+  "log": {
+    "party_chat": false
+  },
+  "queue": {
+    "commands": {
+      "normal": {
+        "play bedwars_eight_two": false,
+        "play bedwars_four_three": false,
+        "play bedwars_four_four": true,
+        "play bedwars_two_four": false
+      },
+      "dreams": {
+        "play bedwars_eight_two_rush": false,
+        "play bedwars_four_four_rush": false,
+        "play bedwars_eight_two_ultimate": false,
+        "play bedwars_four_four_ultimate": false,
+        "play bedwars_eight_two_voidless": false,
+        "play bedwars_four_four_voidless": false,
+        "play bedwars_eight two_armed": false,
+        "play bedwars_four_four_armed": false,
+        "play bedwars_eight two_lucky": false,
+        "play bedwars_four_four_lucky": false,
+        "play bedwars_castle": false
+      }
+    },
+    "timeout": 65
+  },
+  "shout": {
+    "enabled": true,
+    "messages": [
+      ""
+    ]
+  },
+  "keys": {
+    "game_starts_soon": " [CHAT] The game starts in 10 seconds!",
+    "game_starts": " [CHAT]      Protect your bed and destroy the enemy beds.",
+    "command": " [CHAT] Can't find a player by the name of '%s'"
+  }
+}
