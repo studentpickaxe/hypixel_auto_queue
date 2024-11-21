@@ -1,6 +1,7 @@
 import time
 
 from auto_queue.auto_queue import auto_queue, LOG_FILE
+from log import log
 
 if __name__ == '__main__':
     time.sleep(2)
@@ -11,5 +12,5 @@ if __name__ == '__main__':
                 file.seek(0, 2)
                 file.write("\n\n")
     except Exception as e:
-        log(e)
+        log(LOG_FILE, e)
     auto_queue()

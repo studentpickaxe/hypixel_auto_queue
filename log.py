@@ -6,7 +6,7 @@ from pynput import keyboard
 keyboard_controller = keyboard.Controller()
 
 
-def log(log_file, message: str):
+def log(log_file, message):
     timestamp = time.strftime("%y-%m-%d %X", time.localtime())
     log_message = f"[{timestamp}] {message}"
     print(log_message)
