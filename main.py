@@ -11,5 +11,5 @@ if __name__ == '__main__':
                 file.seek(0, 2)
                 file.write("\n\n")
     except Exception as e:
-        print(e)
+        log(e)
     auto_queue()
