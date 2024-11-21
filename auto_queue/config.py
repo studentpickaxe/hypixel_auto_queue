@@ -6,14 +6,10 @@ with open("config.json", 'r', encoding='UTF-8') as cfg_file:
     cfg_data = json.load(cfg_file)
 
     # Minecraft log
-    PRESETS = cfg_data["minecraft_log"]["location"]
     MINECRAFT_LOG_ENCODING = cfg_data["minecraft_log"]["encoding"]
-    if PRESETS == "vanilla":
-        MINECRAFT_LOG_FILE = os.path.expanduser("~") + "/AppData/Roaming/.minecraft/logs/latest.log"
-    elif PRESETS == "lunar":
-        MINECRAFT_LOG_FILE = os.path.expanduser("~") + "/.lunarclient/offline/multiver/logs/latest.log"
-    else:
-        MINECRAFT_LOG_FILE = cfg_data["minecraft_log"]["location"] + "/latest.log"
+    preset = cfg_data["minecraft_log"]["preset"]
+    path = cfg_data["minecraft_log"]["presets"][preset]["path"]
+    MINECRAFT_LOG_FILE = os.path.expanduser(path) + "\\latest.log"
 
     # log
     LOG_FILE = "auto_queue.log"

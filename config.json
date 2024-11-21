@@ -1,10 +1,18 @@
 {
   "minecraft_log": {
-    "location": "lunar",
-    "encoding": "ansi"
-  },
-  "log": {
-    "party_chat": false
+    "encoding": "ansi",
+    "preset": "lunar",
+    "presets": {
+      "vanilla": {
+        "path": "~\\AppData\\Roaming\\.minecraft\\logs"
+      },
+      "lunar": {
+        "path": "~\\.lunarclient\\offline\\multiver\\logs"
+      },
+      "fabric-loader-0.16.9-1.21.1": {
+        "path": "~\\AppData\\Roaming\\.minecraft\\versions\\fabric-loader-0.16.9-1.21.1\\logs"
+      }
+    }
   },
   "queue": {
     "commands": {
