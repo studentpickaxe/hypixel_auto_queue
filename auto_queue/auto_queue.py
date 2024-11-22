@@ -119,6 +119,9 @@ def auto_queue():
                     shout(success_count)
 
                 new_lines = read_mc_log()
+                if ENABLE_SHOUT and IS_MUTED_KEY in new_lines:
+                    log(LOG_FILE, "You have been muted and cannot shout anymore! Stopping...")
+                    stop(start_time, t2, success_count, failure_count)
                 if STOP_KEY in new_lines:
                     stop(start_time, t2, success_count, failure_count)
                 queue()
@@ -136,9 +139,6 @@ def auto_queue():
                 )
 
                 new_lines = read_mc_log()
-                if ENABLE_SHOUT and IS_MUTED_KEY in new_lines:
-                    log(LOG_FILE, "You have been muted and cannot shout anymore! Stopping...")
-                    stop(start_time, t2, success_count, failure_count)
                 if STOP_KEY in new_lines:
                     stop(start_time, t2, success_count, failure_count)
                 queue()
