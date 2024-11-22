@@ -47,6 +47,7 @@
   "keys": {
     "game_starts_soon": " [CHAT] The game starts in 10 seconds!",
     "game_starts": " [CHAT]      Protect your bed and destroy the enemy beds.",
+    "is_muted": " [CHAT] Your mute will expire in ",
     "command": " [CHAT] Can't find a player by the name of '%s'"
   }
 }

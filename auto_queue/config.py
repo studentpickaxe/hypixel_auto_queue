@@ -32,6 +32,7 @@ with open("config.json", 'r', encoding='UTF-8') as cfg_file:
     # key
     GAME_STARTS_SOON_KEY = cfg_data['keys']['game_starts_soon']
     GAME_STARTS_KEY = cfg_data['keys']['game_starts']
+    IS_MUTED_KEY = cfg_data['keys']['is_muted']
     COMMAND_KEY = cfg_data['keys']['command']
     STOP_KEY = re.sub("%s", "--stop", COMMAND_KEY)  # type "/w --stop" to stop queue
     REQUEUE_KEY = re.sub("%s", "--rq", COMMAND_KEY)  # type "/w --rq" to re-queue
