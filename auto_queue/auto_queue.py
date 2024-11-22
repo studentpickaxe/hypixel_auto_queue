@@ -115,6 +115,8 @@ def auto_queue():
                 )
                 t2 += time.time() - t1
 
+                time.sleep(0.4)
+
                 if ENABLE_SHOUT:
                     shout(success_count)
 
@@ -147,8 +149,6 @@ def auto_queue():
 
 
 def shout(i):
-    time.sleep(0.3)
-
     # /
     keyboard_ctrl.press('/')
     time.sleep(0.05)
@@ -171,4 +171,4 @@ def shout(i):
     keyboard_ctrl.press(keyboard.Key.enter)
     keyboard_ctrl.release(keyboard.Key.enter)
 
-    time.sleep(0.3)
+    time.sleep(0.4)
